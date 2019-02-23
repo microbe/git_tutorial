@@ -1,16 +1,22 @@
+git init
+
 git config --global user.name "Doo Yang"
 git config --global user.email "microbe@lgbmi.com"
 git config --global color.ui auto  # default since Git 1.8.4
 
-git init
-.ignore
+.gitignore  # include files not to track
+
 git add <file>
 git add -i  # interactive adding
 
 git rm --cached <filename>  # remove from the staging area
+
 git commit -m "Initial commit"
+# If applied, this commit will "remove deprecated methods"
+
 git checkout
 git checkout -- <filename>  # revert the file
+
 # Branch
 git checkout -b new_feature # create a new branch and switch to the branch
 git checkout master # back to the master
