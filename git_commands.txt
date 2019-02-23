@@ -26,6 +26,8 @@ git checkout -- <filename>  # revert the file
 git branch new_feature  # create a new branch
 git checkout -b new_feature # create a new branch and switch to the branch
 git checkout master # back to the master
+git branch --merged  # show only the branches merged
+git branch --no-merged  # show only the branches not merged
 git branch -d new_feature # delete the branch
 
 git merge
