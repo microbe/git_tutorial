@@ -50,3 +50,6 @@ git merge <branch>
 # Help
 git help config
 
+# Reference
+Brad Traversy
+
