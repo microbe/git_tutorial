@@ -9,7 +9,12 @@ git config --global color.ui auto  # default since Git 1.8.4
 git add <file>
 git add -i  # interactive adding
 
-git rm --cached <filename>  # remove from the staging area
+git rm --cached <filename>  # remove the file from the staging area
+git reset HEAD <file>  # to unstage and match the index to the commit
+# Three phases of the Git working environment
+#   working copy - index (stage) - commit
+#   reset syncs the index (stage) to the commit
+#   add syncs the working copy to the index (stage)
 
 git commit -m "Initial commit"
 # If applied, this commit will "remove deprecated methods"
