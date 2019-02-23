@@ -1,0 +1,41 @@
+git config --global user.name "Doo Yang"
+git config --global user.email "microbe@lgbmi.com"
+git config --global color.ui auto  # default since Git 1.8.4
+
+git init
+.ignore
+git add <file>
+git add -i  # interactive adding
+
+git rm --cached <filename>  # remove from the staging area
+git commit -m "Initial commit"
+git checkout
+git checkout -- <filename>  # revert the file
+# Branch
+git checkout -b new_feature # create a new branch and switch to the branch
+git checkout master # back to the master
+git branch -d new_feature # delete the branch
+
+git merge
+git status
+git log
+git log --pretty=oneline
+git log --graph --oneline --decorate --all
+git log --name-status
+
+git diff
+git tab <tag>
+
+
+git clone
+# git clone automatically connect to the remote server.
+# if not cloned, the remote server can be connected with
+git remote add origin <server>
+git pull
+(git push)
+git fetch
+git merge <branch>
+
+# Help
+git help config
+
