@@ -23,6 +23,7 @@ git checkout
 git checkout -- <filename>  # revert the file
 
 # Branch
+git branch new_feature  # create a new branch
 git checkout -b new_feature # create a new branch and switch to the branch
 git checkout master # back to the master
 git branch -d new_feature # delete the branch
