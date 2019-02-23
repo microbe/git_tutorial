@@ -1,3 +1,5 @@
+# Essential Git commands
+
 git init
 
 git config --global user.name "Doo Yang"
@@ -6,15 +8,24 @@ git config --global color.ui auto  # default since Git 1.8.4
 
 .gitignore  # include files not to track
 
+git status
+git log
+git log --pretty=oneline
+git log --graph --oneline --decorate --all
+git log --name-status
+
+git add .  # add all files including the sub-folders
 git add <file>
 git add -i  # interactive adding
 
 git rm --cached <filename>  # remove the file from the staging area
 git reset HEAD <file>  # to unstage and match the index to the commit
+
 # Three phases of the Git working environment
-#   working copy - index (stage) - commit
-#   reset syncs the index (stage) to the commit
-#   add syncs the working copy to the index (stage)
+#   Working copy - Index (stage) - Commit
+# Git reset HEAD syncs the index (stage) to the commit
+# Git add syncs the working copy to the index (stage)
+# Git rm --cached removes the file from the index (stage)
 
 git commit -m "Initial commit"
 # If applied, this commit will "remove deprecated methods"
@@ -31,28 +42,28 @@ git branch --no-merged  # show only the branches not merged
 git branch -d new_feature # delete the branch
 
 git merge
-git status
-git log
-git log --pretty=oneline
-git log --graph --oneline --decorate --all
-git log --name-status
+
 
 git diff
 git tab <tag>
 
 
+# Git commands for the collaboration
+
 git clone
 # git clone automatically connect to the remote server.
 # if not cloned, the remote server can be connected with
 git remote add origin <server>
-git pull
+git pull  # pull is more commona and the recommended way to apply the changes
 (git push)
+
 git fetch
 git merge <branch>
+
 
 # Help
 git help config
 
 # Reference
-Brad Traversy
+Brad Traversy YouTube tutorial
 
