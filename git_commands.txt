@@ -13,6 +13,9 @@ git log
 git log --pretty=oneline
 git log --graph --oneline --decorate --all
 git log --name-status
+git log --name-only
+git log --name-only --oneline
+git log --stat
 
 git add .  # add all files including the sub-folders
 git add <file>
