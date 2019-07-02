@@ -50,6 +50,34 @@ git merge
 git diff
 git tab <tag>
 
+# Git commands for error fixing
+git checkout -- <filename> # undo the working file
+
+## Move a commit to another branch, i.e. from master to feature
+git checkout feature
+git cherry-pick <hash in master>
+
+git reset --soft <hash to go to>  # log reset to the hash. staging intact. working intact
+git reset --mixed <hash to go to> # default. log reset to the hash. staging reset. working intact
+git reset --hard <has to go to>  # log reset to the hash. stating reset. working reset
+git clean -df  # remove untracked files
+
+## Recover from the reset --hard
+git reflog  # identify the reset ore removed hash
+git checkout <removed hash>  # detached head. will be permanently removed when the garbage collection
+git branch <branch name>  # to keep the removed commit and changes
+
+## Undo without changing the git history
+git revert <hash to undo>  # revert to the hash. add another commit. history intact
+
+# Temporary save
+git stash save # deprecated
+git stash push -m "message"  # save temporarily
+git stash list
+git stash apply # apply the most recent stash and keep it
+git stash pop  # apply the most recent stash and delete it
+git stash drop <stash> # delete the stash
+git stash clear  #delete all stash
 
 # Git commands for the collaboration
 
