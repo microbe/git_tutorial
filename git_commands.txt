@@ -1,6 +1,9 @@
 # Essential Git commands
 
+## Start a project
 git init
+git clone
+
 
 git config --global user.name "Doo Yang"
 git config --global user.email "microbe@lgbmi.com"
@@ -50,6 +53,7 @@ git merge
 git diff
 git tab <tag>
 
+
 # Git commands for error fixing
 git checkout -- <filename> # undo the working file
 
@@ -70,6 +74,7 @@ git branch <branch name>  # to keep the removed commit and changes
 ## Undo without changing the git history
 git revert <hash to undo>  # revert to the hash. add another commit. history intact
 
+
 # Temporary save
 git stash save # deprecated
 git stash push -m "message"  # save temporarily
@@ -79,8 +84,8 @@ git stash pop  # apply the most recent stash and delete it
 git stash drop <stash> # delete the stash
 git stash clear  #delete all stash
 
-# Git commands for the collaboration
 
+# Git commands for the collaboration
 git clone
 # git clone automatically connect to the remote server.
 # if not cloned, the remote server can be connected with
