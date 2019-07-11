@@ -90,7 +90,8 @@ git clone
 # git clone automatically connect to the remote server.
 # if not cloned, the remote server can be connected with
 git remote add origin <server>
-git pull  # pull is more commona and the recommended way to apply the changes
+git pull  # pull is more common and the recommended way to apply the changes
+git pull --rebase  # if the local has changes
 (git push)
 
 git fetch
