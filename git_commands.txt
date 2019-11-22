@@ -94,6 +94,11 @@ git stash pop  # apply the most recent stash and delete it
 git stash drop <stash> # delete the stash
 git stash clear  #delete all stash
 
+# Correct errors in a file - checkout parts of a file
+# Checkout interactively from a correct commit <SHA>
+# For the keyboard help, type ?
+git checkout <SHA> -p -- <filename>
+
 
 # Git commands for the collaboration
 git clone
