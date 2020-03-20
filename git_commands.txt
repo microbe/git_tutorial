@@ -113,6 +113,10 @@ git fetch
 git merge <branch>
 
 
+# List not tracked files
+git ls-files --others -- folder/
+
+
 # Help
 git help config
 
