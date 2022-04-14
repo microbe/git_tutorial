@@ -20,6 +20,31 @@ git log --name-only
 git log --name-only --oneline
 git log --stat
 
+
+# Submodule
+# To prevent being pushed into GitHub or a remote repository
+# Prepare a bare data repository
+# The data directory has its own git repository and its content
+# is not pushed to the remote repository
+# e.g., structure
+#   project/
+#     /data-repo
+#     /analysis
+#       /data
+git init --bare data-repo
+cd analysis
+git init
+git clone ../data-repo data
+git submodule add data
+git add .
+git commit
+# set up a remote repository, e.g., GitHub
+git push
+
+
+
+
+
 git add .  # add all files including the sub-folders
 git add <file>
 git add -i  # interactive adding
