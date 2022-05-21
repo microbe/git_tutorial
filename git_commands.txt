@@ -124,6 +124,19 @@ git stash clear  #delete all stash
 # For the keyboard help, type ?
 git checkout <SHA> -p -- <filename>
 
+# Git rebase
+git checkout -b branch
+git commit
+...
+git commit
+git checkout master
+git pull
+git checkout branch
+git rebase master
+git checkout master
+git rebase branch (or git merge branch)
+git push
+
 
 # Git commands for the collaboration
 git clone
